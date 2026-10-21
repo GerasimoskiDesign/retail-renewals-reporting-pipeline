@@ -1,0 +1,25 @@
+# Demo dashboard users. Only bcrypt hashes are stored here.
+# The plain demo credentials are listed in the README (synthetic demo only).
+# Add a user: python -m renewals hash-password <plain>  -> paste the hash below.
+users:
+  - username: regional.manager
+    display_name: "Regional Manager (demo)"
+    role: regional_manager
+    password_hash: "$2b$10$9u.D.ej9qjqtH.agUDvKMOt07mpMQmDMuSlhOTVKeggLQywq97lFS"
+  - username: manager.north
+    display_name: "Shop Manager, Region North (demo)"
+    role: shop_manager
+    region_id: R1
+    password_hash: "$2b$10$DXxk.XMcBkENkyQiPbAFR.k.7pY0EWe0lJ2ViXUvBv7ERmpvelxka"
+  - username: manager.south
+    display_name: "Shop Manager, Region South (demo)"
+    role: shop_manager
+    region_id: R2
+    password_hash: "$2b$10$.FzhxYlhh.T7GgMP/IJ0MeYq6l5w0RIzROFiGY1U4wsgFma8BheMu"
+  - username: employee.s05
+    display_name: "Employee, shop S05 (demo)"
+    role: employee
+    region_id: R1
+    shop_id: S05
+    agent_id: A057
+    password_hash: "$2b$10$.gOGtLT7XZUifJXv7BeJ6eEkOjTS6x.8Go52bOTYfp4zrxlGGdX2G"
