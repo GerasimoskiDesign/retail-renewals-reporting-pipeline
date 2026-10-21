@@ -1,0 +1,31 @@
+shop_id,shop_name,region_id,region_name,shop_type
+S01,Riverside,R1,Region North,flagship
+S02,Old Town,R2,Region South,flagship
+S03,Harbour,R3,Region East,flagship
+S04,Central Station,R4,Region West,flagship
+S05,Market Square,R1,Region North,standard
+S06,Hillview,R2,Region South,standard
+S07,Lakeside,R3,Region East,standard
+S08,Bridge Street,R4,Region West,standard
+S09,Millbrook,R1,Region North,standard
+S10,Northgate,R2,Region South,standard
+S11,Southpark,R3,Region East,standard
+S12,Eastfield,R4,Region West,standard
+S13,Westbury,R1,Region North,standard
+S14,Kingsway,R2,Region South,standard
+S15,Oakwood,R3,Region East,standard
+S16,Elm Court,R4,Region West,standard
+S17,Stonebridge,R1,Region North,standard
+S18,Fairview,R2,Region South,standard
+S19,Greenfield,R3,Region East,standard
+S20,Ashford,R4,Region West,standard
+S21,Brookside,R1,Region North,standard
+S22,Cedar Mall,R2,Region South,standard
+S23,Dockyard,R3,Region East,pickup_point
+S24,Parkside,R4,Region West,pickup_point
+S25,Queens Road,R1,Region North,pickup_point
+S26,Rosewood,R2,Region South,pickup_point
+S27,Silverlake,R3,Region East,pickup_point
+S28,Thornbury,R4,Region West,pickup_point
+S29,Valley Plaza,R1,Region North,pickup_point
+S30,Windmill,R2,Region South,pickup_point
