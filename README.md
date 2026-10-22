@@ -8,6 +8,10 @@ a role-based dashboard shows each person the numbers they are allowed to see.
 
 *Rebuilt from scratch on synthetic data. The production version is proprietary.*
 
+Companion repo: [streamlit-dashboard](https://github.com/GerasimoskiDesign/streamlit-dashboard)
+is the event-level reporting engine and full role-based dashboard that sits on top of daily
+source files like the ones this pipeline downloads.
+
 ## The problem
 
 A retail network of about 30 shops tracks two sales streams every day: contract renewals and
