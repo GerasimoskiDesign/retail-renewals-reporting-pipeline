@@ -72,7 +72,7 @@ def naive_vs_fixed_chart(
     """Left: network digital share per day. Right: shop/days that break the 100% cap."""
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4.2), facecolor=SURFACE)
     for bundle, color, label in (
-        (naive, ORANGE, "Naive (old manual logic)"),
+        (naive, ORANGE, "Naive row counting"),
         (fixed, BLUE, "Fixed pipeline"),
     ):
         sd = bundle.shop_day

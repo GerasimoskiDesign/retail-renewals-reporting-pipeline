@@ -214,7 +214,7 @@ def build_parser() -> argparse.ArgumentParser:
             "--mode",
             choices=["fixed", "naive"],
             default="fixed",
-            help="naive = reproduce the old manual counting logic",
+            help="naive = count rows per source without dedup (baseline that fails on purpose)",
         )
         t.add_argument("--real", action="store_true", help="read from REAL_DOWNLOAD_DIR")
         t.set_defaults(func=lambda a, s, pub=publish: cmd_transform(a, s, publish=pub))

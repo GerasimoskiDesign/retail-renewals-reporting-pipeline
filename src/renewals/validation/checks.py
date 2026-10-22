@@ -1,9 +1,8 @@
 """Invariants every published report must satisfy. Any violation stops publishing.
 
-These checks exist because the numbers are used for shop bonuses: a silently wrong report
-is worse than a late one. The checks are deliberately independent of how the numbers were
-produced, so the same checks run against the fixed pipeline and the naive (old manual)
-logic.
+These checks exist because people act on these numbers: a silently wrong report is worse
+than a late one. The checks are deliberately independent of how the numbers were produced,
+so the same checks run against the fixed pipeline and the naive row-counting baseline.
 """
 
 from __future__ import annotations

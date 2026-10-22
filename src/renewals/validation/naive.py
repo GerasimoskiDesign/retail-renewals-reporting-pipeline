@@ -1,18 +1,19 @@
-"""The old manual counting logic, reproduced on purpose.
+"""A naive row-counting baseline, implemented on purpose so the validation layer has
+something to catch.
 
-Before automation, the daily report was assembled by hand in Excel:
+It combines the overlapping source reports the obvious way:
 
 * renewals   = rows in *Contract Renewals* for the report day
 * migrations = rows in *Tariff Migrations* for the report day
 * combined   = renewals + migrations
 * digital    = rows in *Digital Orders* + "Pickup" rows in *Store Completions*
-  (click & collect was believed to be missing from Digital Orders)
 
-Each step is reasonable in isolation. Together they double count click & collect in the
-digital figure, count companion migrations and cancelled-then-restarted contracts twice,
-and count prior-month starts in the wrong month. On normal days the errors are small
-enough to look plausible; in the campaign week, when click & collect volume jumps, digital
-share goes above 100% at pickup-heavy shops. This module exists so a test can prove that.
+Each step is reasonable in isolation, but the sources overlap. Together they double count
+click & collect in the digital figure, count companion migrations and
+cancelled-then-restarted contracts twice, and count prior-month starts in the wrong month.
+On normal days the errors are small enough to look plausible; in the campaign week, when
+click & collect volume jumps, digital share goes above 100% at pickup-heavy shops. This
+module exists so a test can prove that the validation layer catches it.
 """
 
 from __future__ import annotations
